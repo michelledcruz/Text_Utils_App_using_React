@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 export default function Navbar(props){
     return(
@@ -18,7 +19,7 @@ export default function Navbar(props){
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
+                  {props.text}
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a className="dropdown-item" href="/">Action</a></li>
@@ -32,9 +33,12 @@ export default function Navbar(props){
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
               <button className="btn btn-outline-success" type="submit">Search</button>
             </form>
-            
           </div>
         </div>
       </nav>
     )
 }
+
+PropTypes.propTypes = {
+    title: PropTypes.string.isRequired,
+  };
