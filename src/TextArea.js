@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-
+import PropTypes from 'prop-types';
 
 export default function TextArea(props) {
 
@@ -16,3 +16,7 @@ export default function TextArea(props) {
         </div>
     )
 }
+
+PropTypes.propTypes = {
+    heading: PropTypes.string.isRequired,
+  };
