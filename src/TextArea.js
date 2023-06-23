@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import PropTypes from 'prop-types';
 
+
 export default function TextArea(props) {
 
     const changeText = ()=>{    
@@ -14,10 +15,6 @@ export default function TextArea(props) {
         setText(event.target.value);
     };
 
-    // const googleTranslateElementInit = () => {
-    //     const new1 = new google.translate.TranslateElement({pageLanguage: 'en'}, 'exampleFormControlTextarea1');
-    //     return new1;
-    //   }
 
     const readTime = ()=>{
         const x=text.split(' ').length;
