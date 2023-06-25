@@ -11,25 +11,30 @@ Expand and collapse task details using accordions
 # Installation
 To run this project locally, you'll need to have Node.js installed on your machine. Follow these steps to get started:
 
+1. Clone the repository:
 
-bash
-Copy code
-git clone https://github.com/your-username/react-todo-task-list.git
-Navigate to the project directory:
+   ```
+      git clone https://github.com/your-username/react-todo-task-list.git
+   ```
 
-bash
-Copy code
-cd react-todo-task-list
-Install the dependencies:
+2. Navigate to the project directory:
 
-bash
-Copy code
-npm install
-Start the development server:
+   ```
+    cd react-todo-task-list
+   ```
 
-bash
-Copy code
-npm start
+3. Install the dependencies:
+
+   ```
+    npm install
+   ```
+
+4. Start the development server:
+   ```
+     npm start
+   ```
+
+
 This will start the React development server and open the application in your default browser.
 
 # Usage
@@ -46,9 +51,3 @@ JavaScript/ React js
 
 
 
-
-
-
-
-
-Regenerate response
