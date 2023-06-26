@@ -82,7 +82,7 @@ export default function About() {
     {inputList}
    
   
-    <button type="button" className="btn btn-primary" onClick={changeMode} style={buttonStyle}>Change Mode</button>
+    {/* <button type="button" className="btn btn-primary" onClick={changeMode} style={buttonStyle}>Change Mode</button> */}
     <button type="button" className="btn btn-primary" onClick={addComp} style={buttonStyle}>Add More Task</button>
     </>
   )
