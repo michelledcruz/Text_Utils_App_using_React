@@ -11,6 +11,7 @@ export default function TextArea(props) {
         setText(text.toLowerCase());
     }
 
+
     const handleChange = (event) => {
         setText(event.target.value);
     };
@@ -43,8 +44,8 @@ export default function TextArea(props) {
 
     return(
         <>
-        <div className="mb-3">
-            <h2>{props.heading}</h2>
+        <div className="mb-10">
+            <h2 className={`text-${props.textMode}`}>{props.heading}</h2>
             <textarea className="form-control" value ={text} id="exampleFormControlTextarea1" rows="8" onChange={handleChange}></textarea>
             <button type="button" className="btn btn-primary" onClick={changeText}>To UpperCase</button>
             <button type="button" className="btn btn-primary m-5" onClick={changeTextLower}>To LowerCase</button>
@@ -52,8 +53,8 @@ export default function TextArea(props) {
             <button type="button" className="btn btn-primary m-5" onClick={removeSpaces}>Remove Extra Spaces</button>
         </div>
        <div className="text-summary">
-            <p>{text.split(' ').length} words and  {text.length} characters</p>
-            <p>Read Time {readTime()} mins</p>
+            <p className={`text-${props.textMode}`}>{text.split(' ').length} words and  {text.length} characters</p>
+            <p className={`text-${props.textMode}`}>Read Time {readTime()} mins</p>
        </div>    
        </>    
     )
