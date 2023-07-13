@@ -48,11 +48,7 @@ React
 HTML
 CSS
 JavaScript/ React js
-# Technologies Used
-React
-HTML
-CSS
-JavaScript/ React js
+
 
 
 
