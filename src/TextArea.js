@@ -46,7 +46,7 @@ export default function TextArea(props) {
         <>
         <div className="mb-10">
             <h2 className={`text-${props.textMode}`}>{props.heading}</h2>
-            <textarea className="form-control" value ={text} id="exampleFormControlTextarea1" rows="8" onChange={handleChange}></textarea>
+            <textarea  className="form-control" value ={text} id="exampleFormControlTextarea1" style ={{backgroundColor : props.textMode=== 'light'?'black':'white' ,  color : props.textMode=== 'light'?'white':'black' }} rows="8" onChange={handleChange}></textarea>
             <button type="button" className="btn btn-primary" onClick={changeText}>To UpperCase</button>
             <button type="button" className="btn btn-primary m-5" onClick={changeTextLower}>To LowerCase</button>
             <button type="button" className="btn btn-primary m-5" onClick={handleCopy}>Copy Text</button>
