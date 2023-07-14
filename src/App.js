@@ -1,10 +1,17 @@
 
 import { useState } from 'react';
-// import About from './About';
+import React  from 'react';
+import About from './About';
 import './App.css';
 import Navbar from './Navbar';
 import TextArea from './TextArea';
 import Alert from './Alert';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from "react-router-dom";
+
 
 
 function App() {
@@ -37,14 +44,18 @@ function App() {
   }
 
   return (
-  <>
-  <Navbar title="To-Do List" text="Dropdown12" mode={mode} toggleMode={toggleMode} textMode={textMode}/>
-  <Alert alert={alert}/>
-  <div className={`container bg-${mode}`}>
-  <TextArea textMode={textMode} heading="Enter your text below"></TextArea>
-  {/* <About></About> */}
-  </div>
-  </>
+  <Router>
+    <>
+    <Navbar title="To-Do List" text="Dropdown12" mode={mode} toggleMode={toggleMode} textMode={textMode}/>
+    <Alert alert={alert}/>
+    <div className={`container bg-${mode}`}>
+    <Routes>
+      <Route path="/about" element={ <About/> }/>
+      <Route path="/" element ={ <TextArea textMode={textMode} heading="Enter your text below"></TextArea> } />
+    </Routes>
+    </div>
+    </>
+  </Router>
   );
 }
 
