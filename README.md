@@ -1,5 +1,6 @@
 # React To-Do Task List with Accordions
 This project is a simple to-do task list built using React and accordions. It allows you to manage and organize your tasks in a collapsible accordion format.
+This project also consists of text utils application
 
 # Features
 Add new tasks with a title and description
