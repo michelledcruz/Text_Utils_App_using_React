@@ -50,7 +50,7 @@ function App() {
     <Alert alert={alert}/>
     <div className={`container bg-${mode}`}>
     <Routes>
-      <Route path="/about" element={ <About/> }/>
+      <Route path="/about" element={ <About mode={mode} /> }/>
       <Route path="/" element ={ <TextArea textMode={textMode} heading="Enter your text below"></TextArea> } />
     </Routes>
     </div>
