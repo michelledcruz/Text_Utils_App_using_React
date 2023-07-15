@@ -1,16 +1,21 @@
 import React, { useState } from 'react';
 
-export default function About() {
+export default function About(props) {
 
     const buttonStyle ={ backgroundColor: 'black', color: '#af1df3', border: '2px solid rgb(175, 29, 243)', borderRadius: '22px' , padding: '10px 15px', marginTop: '2px'}
 
-    const [myStyle, setMyStyle] = useState({
-        backgroundColor:"black",
-        color:"white",
-        border: "2px solid rgb(175, 29, 243)",
-        borderRadius: '20px',
+    // const [myStyle, setMyStyle] = useState({
+    //     backgroundColor:"black",
+    //     color:"white",
+    //     border: "2px solid rgb(175, 29, 243)",
+    //     borderRadius: '20px',
 
-    })
+    // })
+
+    const myStyle = {
+      color: props.mode ==='dark'?'white':'black',
+      backgroundColor: props.mode === 'dark'?'black':'#3e3e3e',
+    }
 
     const myHeadingStyle = { width: '100px'}
 
@@ -46,20 +51,20 @@ export default function About() {
       };
 
 
-    const changeMode= ()=>{
-        if(myStyle.color=='white'){
-            setMyStyle({
-                backgroundColor:"black",
-                color:"red",
-            })
-        }
-        else{
-            setMyStyle({
-                backgroundColor:"black",
-                color:"white",
-            })
-        }
-    }
+    // const changeMode= ()=>{
+    //     if(myStyle.color=='white'){
+    //         setMyStyle({
+    //             backgroundColor:"black",
+    //             color:"red",
+    //         })
+    //     }
+    //     else{
+    //         setMyStyle({
+    //             backgroundColor:"black",
+    //             color:"white",
+    //         })
+    //     }
+    // }
 
   return (
     <>
