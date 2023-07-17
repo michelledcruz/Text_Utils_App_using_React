@@ -1,6 +1,5 @@
 # React Text Utils Application
-This project is a simple to-do task list built using React and accordions. It allows you to manage and organize your tasks in a collapsible accordion format.
-This project also consists of text utils application
+This application provides various text manipulation utilities to help users perform common operations on text. This React application is build using functional components. I have used the React Router DOM a popular routing library for React applications. It provides a declarative way to handle navigation and routing within a React application.
 
 # Features
 Text Conversion: Convert text to uppercase, lowercase, sentence case, or title case.
@@ -48,9 +47,10 @@ To copy the modified text, click the "Copy to Clipboard" button.
 
 # Technologies Used
 React
+React Router DOM
 HTML
 CSS
-JavaScript/ React js
+JavaScript (ES6)
 
 
 
