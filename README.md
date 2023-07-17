@@ -1,13 +1,13 @@
-# React To-Do Task List with Accordions
+# React Text Utils Appliocation
 This project is a simple to-do task list built using React and accordions. It allows you to manage and organize your tasks in a collapsible accordion format.
 This project also consists of text utils application
 
 # Features
-Add new tasks with a title and description
-Mark tasks as completed
-Edit task details
-Delete tasks
-Expand and collapse task details using accordions
+Text Conversion: Convert text to uppercase, lowercase, sentence case, or title case.
+Character Count: Get the total number of characters in the input text.
+Word Count: Count the number of words in the input text.
+Remove Extra Spaces: Eliminate additional spaces between words.
+Copy to Clipboard: Copy the modified text to the clipboard for easy sharing.
 
 # Installation
 To run this project locally, you'll need to have Node.js installed on your machine. Follow these steps to get started:
@@ -15,13 +15,14 @@ To run this project locally, you'll need to have Node.js installed on your machi
 1. Clone the repository:
 
    ```
-      git clone https://github.com/your-username/react-todo-task-list.git
+      git clone https://github.com/your-username/Text_Utils_App_using_React.git
    ```
 
 2. Navigate to the project directory:
 
    ```
-    cd react-todo-task-list
+    cd Text_Utils_App_using_React
+
    ```
 
 3. Install the dependencies:
@@ -39,10 +40,11 @@ To run this project locally, you'll need to have Node.js installed on your machi
 This will start the React development server and open the application in your default browser.
 
 # Usage
-Once the application is running, you can perform the following actions:
-
-Add a task: Click on the "Add Task" button and fill in the title and description for the task.
-Expand/collapse task details: Click on the task title or the arrow icon to expand or collapse the task details.
+Enter the desired text in the input field.
+Choose the desired text manipulation operation from the available options.
+Click the "Submit" or "Process" button to apply the selected operation.
+The modified text will be displayed in the output area.
+To copy the modified text, click the "Copy to Clipboard" button.
 
 # Technologies Used
 React
